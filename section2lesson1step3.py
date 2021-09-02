@@ -1,7 +1,6 @@
 #Напишите программу, которая находит самый длинный общий префикс для строк находящихся в списке строк
 #flower,flow,flight
 s = input().split(',')
-print(s)
 
 # найти самый короткий элемент
 min_elem = s[0]
@@ -12,13 +11,14 @@ for i in range(len(s)):
         min_elem = s[i]
 
 print(min_elem, min_len)
-res = ''
-#for i in range(len(s[0])):
-#    for j in range(len(s[0])):
-#        counter = 0
-#        if s[0][i] == s[j][i]:
-#            counter += 1
-#        if counter == len(s):
-#            res += s[0][i]
 
-print(s)
+res = ''
+for i in range(min_len):
+    for j in range(len(s[i])):
+        counter = 0
+        print(s[0][i], s[j][i])
+        if s[0][i] == s[j][i]:
+            counter += 1
+        if counter == len(s):
+            res += s[0][i]
+print(res)
