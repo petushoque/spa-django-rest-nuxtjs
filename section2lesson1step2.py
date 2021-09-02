@@ -6,8 +6,9 @@ for i in range(len(x)):
         if int(x[i]) == int(x[j]):
             continue
         if int(x[i]) + int(x[j]) == y:
-            print('yes')
-            res.append(i)
-            #res.append(j)
+            if i not in res:
+                res.append(i)
+            if j not in res:
+                res.append(j)
             break
 print(res)
