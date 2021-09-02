@@ -14,11 +14,14 @@ print(min_elem, min_len)
 
 res = ''
 for i in range(min_len):
+    counter = 0
     for j in range(len(s[i])):
-        counter = 0
+        
         print(s[0][i], s[j][i])
+        print(counter)
         if s[0][i] == s[j][i]:
             counter += 1
+            print('yes')
         if counter == len(s):
             res += s[0][i]
 print(res)
