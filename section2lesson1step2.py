@@ -2,7 +2,7 @@ x = input().split(',')
 y = float(input())
 res = []
 for i in range(len(x)):
-    for j in range(i, len(x)):
+    for j in range(i+1, len(x)):
         if float(x[i]) + float(x[j]) == y:
             res.append(i)
             res.append(j)
