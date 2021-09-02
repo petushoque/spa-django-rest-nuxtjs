@@ -18,16 +18,16 @@ s.remove(min_elem)
 print(s)
 
 res = ''
-for i in range(len(s)):
+for i in range(min_len):
     counter = 0
-    for j in range(min_len):        
-        print(s[0][i], s[j][i])
+    for j in range(len(s)):        
+        print(min_elem[i], s[j][i])
         
-        if s[0][i] == s[j][i]:
+        if min_elem[i] == s[j][i]:
             counter += 1
             print('yes')
         if counter == len(s):
-            res += s[0][i]
+            res += min_elem[i]
             counter = 0
         print(counter)
         print(res)
