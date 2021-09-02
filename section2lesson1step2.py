@@ -1,14 +1,11 @@
 x = input().split(',')
-y = int(input())
+y = float(input())
 res = []
 for i in range(len(x)):
-    for j in range(1, len(x)):
-        if int(x[i]) == int(x[j]):
-            continue
-        if int(x[i]) + int(x[j]) == y:
-            if i not in res:
-                res.append(i)
-            if j not in res:
-                res.append(j)
+    for j in range(i, len(x)):
+        if float(x[i]) + float(x[j]) == y:
+            res.append(i)
+            res.append(j)
+        if len(res) == 2:
             break
 print(res)
