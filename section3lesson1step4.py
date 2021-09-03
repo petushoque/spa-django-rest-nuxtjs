@@ -1,7 +1,10 @@
+# решение с подключением дополнительной библиотеки
+
 import roman;
 s = input()
 print(roman.fromRoman(s))
-#n=roman.fromRoman("X"); #n becomes 10
+
+# готовая функция для перевода
 
 def romanToInt(s):
         result=0
