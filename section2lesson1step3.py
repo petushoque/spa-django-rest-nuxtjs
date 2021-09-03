@@ -31,5 +31,6 @@ for i in range(min_len):
             counter = 0
         print(counter)
         print(res)
-        
-print(res)
+   
+if res != 0:
+    print(res)
