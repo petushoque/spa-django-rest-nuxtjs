@@ -5,9 +5,11 @@ if x < 0:
         print(int(x_rev))
     else:
         print(0)    
-if x > 0:
+elif x > 0:
     x_rev = str(x)[::-1]
     if int(x_rev) < 2 ** 31:
         print(int(x_rev))
     else:
         print(0)
+else:
+    print(0)
