@@ -23,5 +23,5 @@ for i in range(min_len):
         if counter == len(s):
             res += min_elem[i]
             counter = 0   
-if res != 0:
+if res != '':
     print(res)
