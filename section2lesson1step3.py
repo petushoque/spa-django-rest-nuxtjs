@@ -25,12 +25,10 @@ for i in range(min_len):
             counter = 0   
 print(res)
 
+# ==================================================
+
 # решение с использованием дополнительной библиотеки
-import os.path
-#Напишите программу, которая находит самый длинный общий префикс для строк находящихся в списке строк
-#flower,flow,flight
-s = input().split(',')
 
-
-
-print(os.path.commonprefix(s))
+#import os.path
+#s = input().split(',')
+#print(os.path.commonprefix(s))
