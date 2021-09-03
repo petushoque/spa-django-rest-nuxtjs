@@ -10,27 +10,18 @@ for i in range(len(s)):
         min_len = len(s[i])
         min_elem = s[i]
 
-print(min_elem, min_len)
-
 # удалить из исходного списка самый короткий элемент, чтобы дальше сравнивать его с остальным списком
 s.remove(min_elem)
-
-print(s)
 
 res = ''
 for i in range(min_len):
     counter = 0
     for j in range(len(s)):        
-        print(min_elem[i], s[j][i])
-        
+        #print(min_elem[i], s[j][i])
         if min_elem[i] == s[j][i]:
             counter += 1
-            print('yes')
         if counter == len(s):
             res += min_elem[i]
-            counter = 0
-        print(counter)
-        print(res)
-   
+            counter = 0   
 if res != 0:
     print(res)
