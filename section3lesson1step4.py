@@ -1,2 +1,4 @@
 import roman;
-n=roman.fromRoman("X"); #n becomes 10
+s = input()
+print(roman.fromRoman(s))
+#n=roman.fromRoman("X"); #n becomes 10
