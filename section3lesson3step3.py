@@ -17,3 +17,7 @@ while len(x) or len(y) > 0:
         res.append(y[0])
         y  = y[1:]
 print(res)
+
+res_int = [int(i) for i in res]
+
+print(res_int)
