@@ -16,8 +16,6 @@ while len(x) or len(y) > 0:
     elif int(y[0]) < int(x[0]):
         res.append(y[0])
         y  = y[1:]
-print(res)
-
+# Перевести строковые элементы в целочисленные
 res_int = [int(i) for i in res]
-
 print(res_int)
