@@ -9,7 +9,7 @@ while len(x) or len(y) > 0:
     print('before ', x, y)
     if len(x) == 0:
         print('yes')
-        res.append(y)
+        res += y
         break
     if len(y) == 0:
         res += x
