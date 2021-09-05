@@ -1,24 +1,21 @@
 x = input().split(',')
 y = input().split(',')
 
-res = []
-
-if ''.join(x).isnumeric():
-    print(''.join(x))
-    
-while len(x) or len(y) > 0:
-    if len(x) == 0:
-        res += y
-        break
-    if len(y) == 0:
-        res += x
-        break
-    if int(x[0]) <= int(y[0]):
-        res.append(x[0])
-        x = x[1:]
-    elif int(y[0]) < int(x[0]):
-        res.append(y[0])
-        y  = y[1:]
-# Перевести строковые элементы в целочисленные
-res_int = [int(i) for i in res]
-print(res_int)
+if ''.join(x).isnumeric() and ''.join(y).isnumeric():
+    res = []
+    while len(x) or len(y) > 0:
+        if len(x) == 0:
+            res += y
+            break
+        if len(y) == 0:
+            res += x
+            break
+        if int(x[0]) <= int(y[0]):
+            res.append(x[0])
+            x = x[1:]
+        elif int(y[0]) < int(x[0]):
+            res.append(y[0])
+            y  = y[1:]
+        # Перевести строковые элементы в целочисленные
+    res_int = [int(i) for i in res]
+    print(res_int)
