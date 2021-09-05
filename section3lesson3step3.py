@@ -5,15 +5,15 @@ print(list(y))
 
 res = []
 
-while len(x) or len(y) > 0:
+while len(x) and len(y) > 0:
     print(x, y)
     if len(x) == 0:
         print('yes')
         res.append(y)
-        continue
+        break
     if len(y) == 0:
         res.append(x)
-        continue
+        break
     if int(x[0]) <= int(y[0]):
         res.append(x[0])
         x = x[1:]
