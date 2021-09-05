@@ -3,6 +3,9 @@ y = input().split(',')
 
 res = []
 
+if ''.join(x).isnumeric():
+    print(''.join(x))
+    
 while len(x) or len(y) > 0:
     if len(x) == 0:
         res += y
