@@ -5,6 +5,7 @@ is_in_list = False
 
 tmp = nums[0]
 tmp_ind = 0
+
 for i in range(len(nums)):
     if x == nums[i]:
         print(i)
