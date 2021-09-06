@@ -1,2 +1,2 @@
-nums = [i for i in input().split(',')]
+nums = [int(i) for i in input().split(',')]
 print(nums)
