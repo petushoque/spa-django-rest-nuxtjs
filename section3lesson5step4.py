@@ -3,4 +3,5 @@ s = input()
 if len(s) > 0:
     s_list = s.split(' ')
     print(len(s_list[-1]))
-print(s)
+else:
+    print(0)
