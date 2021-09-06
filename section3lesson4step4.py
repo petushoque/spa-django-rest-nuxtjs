@@ -11,5 +11,6 @@ for i in range(len(nums)):
     elif nums[i] < x:
         tmp = nums[i]
         tmp_ind = i
-        
+
+#вывести индекс + 1        
 print(tmp, tmp_ind)
