@@ -2,5 +2,5 @@ nums = [int(i) for i in input().split(',')]
 x = int(input())
 print(nums, x)
 
-if x in nums:
-    print(nums.find(x))
+for i in range(len(nums)):
+    
