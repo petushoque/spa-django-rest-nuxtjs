@@ -16,4 +16,5 @@ for i in range(len(nums)):
 
 if not is_in_list:
     #вывести индекс + 1        
-    print(tmp, tmp_ind)
+    #print(tmp, tmp_ind)
+    print(tmp_ind + 1)
