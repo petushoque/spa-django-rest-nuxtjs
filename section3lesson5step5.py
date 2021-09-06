@@ -1,0 +1,5 @@
+a = input()
+b = input()
+print(a, b)
+summ = bin(a) + bin(b)
+print(summ)
