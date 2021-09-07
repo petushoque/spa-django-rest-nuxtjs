@@ -12,3 +12,5 @@ for i in range(len(x)):
         if x[i] + x[j]:
             res.append(i + 1)
             res.append(j + 1)
+            
+print(res)
