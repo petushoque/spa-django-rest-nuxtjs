@@ -2,7 +2,7 @@
 
 nums = [int(i) for i in  input().split(',')]
 
-has_duble = False
+has_double = False
 
 for i in range(len(nums)):
     if nums.count(nums[i]) > 1:
