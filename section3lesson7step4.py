@@ -9,7 +9,7 @@ res = []
 
 for i in range(len(x)):
     for j in range(i, len(x)):
-        if x[i] + x[j]:
+        if x[i] + x[j] == target:
             res.append(i + 1)
             res.append(j + 1)
             
