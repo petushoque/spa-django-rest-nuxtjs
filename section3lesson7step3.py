@@ -6,10 +6,23 @@
 price = [int(i) for i in  input().split(',')]
 print(price)
 
+# создание отдельного списка, в котором все элементы списка расположены в убывающем порядке
+profit = 0
 price_sorted = []
 for i in range(len(price)):
     price_sorted.append(price[i])
-
 price_sorted.sort(reverse=True)
-print(price_sorted)
-print(price)
+
+# если цена только падала, прибыли быть не могло
+if price == price_sorted:
+    print(0)
+
+
+else:
+    for i in range(1, len(price)):
+        if price[i] - min(price[:i]) > profit:
+            profit = price[i] - min(price[:i])
+
+#print(price_sorted)
+#print(price)
+print('Profit: ', profit)
