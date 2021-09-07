@@ -5,3 +5,11 @@
 
 price = [int(i) for i in  input().split(',')]
 print(price)
+
+price_sorted = []
+for i in range(len(price)):
+    price_sorted.append(price[i])
+
+price_sorted.sort()
+print(price_sorted)
+print(price)
