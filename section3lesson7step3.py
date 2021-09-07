@@ -10,6 +10,6 @@ price_sorted = []
 for i in range(len(price)):
     price_sorted.append(price[i])
 
-price_sorted.sort()
+price_sorted.sort(reverse=True)
 print(price_sorted)
 print(price)
