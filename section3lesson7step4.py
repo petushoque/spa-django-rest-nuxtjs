@@ -10,5 +10,7 @@ for i in range(len(x)):
         if x[i] + x[j] == target:
             res.append(i + 1)
             res.append(j + 1)
+    if len(res) == 2:
+            break
             
 print(res)
