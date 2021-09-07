@@ -4,3 +4,11 @@ x = [int(i) for i in  input().split(',')]
 print(x)
 target = int(input())
 print(target)
+
+res = []
+
+for i in range(len(x)):
+    for j in range(i, len(x)):
+        if x[i] + x[j]:
+            res.append(i + 1)
+            res.append(j + 1)
