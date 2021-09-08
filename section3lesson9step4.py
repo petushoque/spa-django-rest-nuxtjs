@@ -6,7 +6,7 @@ print(k)
 
 has_double = False
 
-for i in range(k, len(nums)):
+for i in range(k + 1, len(nums)):
     print(nums[i], nums[i - (k + 1)])
-    if nums[i] == nums[i - (k + 1)]:
+    if nums[i] == nums[i - k]:
         print('yes')
