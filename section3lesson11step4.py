@@ -3,3 +3,9 @@ ransomNote = input()
 print(ransomNote)
 magazine = input()
 print(magazine)
+
+for i in range(len(ransomNote)):
+    if magazine.find(ransomNote[i]) != -1:
+        magazine = magazine.replace(ransomNote[i], '', 1)
+        
+print(magazine)
