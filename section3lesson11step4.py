@@ -5,7 +5,10 @@ magazine = input()
 print(magazine)
 
 for i in range(len(ransomNote)):
+    # Если буква в журнале есть, вырезаем ее
     if magazine.find(ransomNote[i]) != -1:
         magazine = magazine.replace(ransomNote[i], '', 1)
+    # Если нужной буквы не нашлось, заканчиваем цикл
+    else:
         
 print(magazine)
