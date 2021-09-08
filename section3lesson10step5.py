@@ -3,3 +3,8 @@ nums = [int(i) for i in  input().split(',')]
 print(nums)
 
 res = []
+zero_counter = 0
+
+for i in range(len(nums)):
+    if nums[i] != 0:
+        
