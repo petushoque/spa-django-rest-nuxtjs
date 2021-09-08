@@ -18,7 +18,7 @@ for i in range(len(word)):
     if word[i] not in vowels:
         result.append(word[i])
     else:
-        result.append(vowels_in_word[couter])
+        result.append(vowels_in_word[counter])
         counter -= 1
         
 print(result)
