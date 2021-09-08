@@ -3,3 +3,9 @@ nums = [int(i) for i in  input().split(',')]
 print(nums)
 k = int(input())
 print(k)
+
+has_double = False
+
+for i in range(k, len(nums)):
+    if nums[i] == nums[i - k]:
+        print(nums[i], nums[i - k])
