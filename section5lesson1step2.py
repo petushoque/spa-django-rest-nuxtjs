@@ -2,5 +2,5 @@
 s = input()
 print(s)
 
-for c in range(s):
+for c in s:
     print(c)
