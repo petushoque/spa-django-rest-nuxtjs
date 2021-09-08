@@ -1,8 +1,8 @@
 # Предположим вы пишите требование о выкупе ransomNote из вырезанных букв из журнала magazine. Верни True, если из вырезанных букв из журнала можно составить записку о выкупе. Учти, каждую букву из журнала можно использовать только 1 раз.
 ransomNote = input()
-print(ransomNote)
 magazine = input()
-print(magazine)
+
+res = True
 
 for i in range(len(ransomNote)):
     # Если буква в журнале есть, вырезаем ее
@@ -10,5 +10,10 @@ for i in range(len(ransomNote)):
         magazine = magazine.replace(ransomNote[i], '', 1)
     # Если нужной буквы не нашлось, заканчиваем цикл
     else:
-        
-print(magazine)
+        res = False
+        break
+
+if res:
+    print('True')
+else:
+    print('False')
