@@ -11,6 +11,6 @@ for c in s:
         break
 
 if len(res) > 0:
-    print(res)
+    print(s.find(res))
 else:
     print(-1)
