@@ -8,6 +8,8 @@ zero_counter = 0
 for i in range(len(nums)):
     if nums[i] != 0:
         res.append(nums[i])
+    else:
+        zero_counter += 1
 
 if zero_counter > 0:
     for i in range(zero_counter):
