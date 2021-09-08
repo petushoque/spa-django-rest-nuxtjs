@@ -12,3 +12,7 @@ for i in range(k + 1, len(nums)):
         has_double = True
         
         
+if has_double:
+    print('True')
+else:
+    print('False')
