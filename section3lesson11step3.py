@@ -6,7 +6,7 @@ vowels = ['a', 'e', 'i', 'o', 'u', 'y']
 
 vowels_in_word = []
 result = []
-counter = 0
+counter = -1
 
 for i in range(len(word)):
     if word[i] in vowels:
@@ -15,5 +15,10 @@ for i in range(len(word)):
 print(vowels_in_word)
 
 for i in range(len(word)):
-    if word[i] in vowels:
+    if word[i] not in vowels:
+        result.append(word[i])
+    else:
+        result.append(vowels_in_word[couter])
+        counter -= 1
         
+print(result)
