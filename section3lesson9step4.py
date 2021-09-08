@@ -5,7 +5,7 @@ k = int(input())
 has_double = False
 
 for i in range(k + 1, len(nums)):
-    if nums[i] == nums[i - k]:
+    if nums[i] == nums[i - (k + 1)]:
         has_double = True
         
         
