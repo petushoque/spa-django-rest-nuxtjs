@@ -2,5 +2,13 @@
 s = input()
 print(s)
 
+res = ''
+
 for c in s:
     print(c)
+    if s.count(c) == 1:
+        res = c
+    if len(res) > 0:
+        break
+        
+print(res)
