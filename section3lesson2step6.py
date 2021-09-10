@@ -7,3 +7,12 @@
 # s содержит только такие скобки '()[]{}'.
 s = list(input())
 print(s)
+
+# ()
+parentheses = 0
+
+# []
+bracket = 0
+
+# {}
+brace = 0
