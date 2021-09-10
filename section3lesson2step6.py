@@ -32,5 +32,13 @@ for c in s:
         brace += 1
     elif c == '}':
         brace -= 1
+    # если закрытых скобок стало больше чем открытых, результат False
     if parentheses < 0 or bracket < 0 or brace < 0:
+        result = False
         break
+
+# если открывающих и закрывающих скобок не равное количество, результат False
+if arentheses != 0 or bracket != 0 or brace != 0:
+    result = False
+    
+print(result)
