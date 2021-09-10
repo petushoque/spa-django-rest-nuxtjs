@@ -8,6 +8,8 @@
 s = list(input())
 print(s)
 
+result = True
+
 # ()
 parentheses = 0
 
@@ -30,4 +32,5 @@ for c in s:
         brace += 1
     elif c == '}':
         brace -= 1
-    
+    if parentheses < 0 or bracket < 0 or brace < 0:
+        break
