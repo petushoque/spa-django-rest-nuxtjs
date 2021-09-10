@@ -16,3 +16,18 @@ bracket = 0
 
 # {}
 brace = 0
+
+for c in s:
+    if c == '(':
+        parentheses += 1
+    elif c == ')':
+        parentheses -= 1
+    elif c == '[':
+        bracket += 1
+    elif c == ']':
+        bracket -= 1
+    elif c == '{':
+        brace += 1
+    elif c == '}':
+        brace -= 1
+    
